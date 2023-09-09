@@ -1,0 +1,29 @@
+aside 
+{
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  font-style: italic;
+  color: #29627e;
+}
+
+aside > p 
+{
+  margin: 0.5rem;
+}
+header
+{
+	
+}
+footer
+{
+	
+}
+section
+{
+}
+nav
+{
+	
+}
