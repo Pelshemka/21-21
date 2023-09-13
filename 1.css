@@ -7,7 +7,34 @@ aside
   font-style: italic;
   color: #29627e;
 }
+body
+{
+  background-color: #fefbd8;
+  color: #618685;
+  border: 6px solid #80ced6;
+  border-radius: 25px;
+  
+}
+section {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px gray;
+  background-image: linear-gradient(to bottom, #80ced6, #fefbd8);
+   padding: 20px;
+}
+p {
+  margin: 50px;
+  text-indent: 50px;
+}
+h1 { text-align: center }
 
+img.roundcorners 
+{
+  border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
 aside > p 
 {
   margin: 0.5rem;
@@ -20,8 +47,9 @@ footer
 {
 	
 }
-section
+section > p
 {
+	 margin: 1 rem;
 }
 nav
 {
