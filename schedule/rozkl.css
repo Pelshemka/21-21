@@ -12,6 +12,10 @@
 	  margin:5px;
 	  float:left;
 }
+.header img{
+	  height: 8%;
+	  width: 8%;
+}
 
 body{
 	color:#0E153A;
@@ -26,7 +30,7 @@ label {
 form {
  margin: 5rem;
  }
-
+.err { background: #faad91; border: 5px solid #fc6f03; }
 
 table, th, td {
   border: 1px solid #0E153A;
@@ -44,7 +48,7 @@ table {
 }
 
 .pz {
-	background-color: #faad91 ;	
+	background-color: #fcdc79 ;	
 }
 .sem {
 	background-color: #a2e7fc;	

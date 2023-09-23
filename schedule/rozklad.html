@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <title>Розклад занять</title>
@@ -7,11 +8,11 @@
 </head>
 
 <body>
-<div id="Sidebar" class="sidebar">
+<div id="Sidebar" class="sidebar">												<!--Зміст сайдбару-->
 
- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 		<!--Елемент щоб закривати сайдбар-->
   
-<form onsubmit="return false;" action="/submit" method="post" >
+<form onsubmit="return false;" action="/submit" method="post" >					<!-- Зміст форми-->
 
 <label for="name">Ім'я: </label> 
 <input type="text" id="name" name="name" required><br><br>
@@ -28,21 +29,24 @@
 <label for="password">Підтвердити пароль: </label> 
 <input type="password" id="rpassword" name="rpassword" required><br><br>
 
-<input type="submit" onclick="return checkPW()" value="Зареєструватися">
+<label id="errmsg"></label>													<!--Для повідомлення про помилку-->
+
+<input style="margin:5%" type="submit" onclick="return checkPW()" value="Зареєструватися"> <!--Кнопка підтвердження, перевірка паролів на клік-->
 </form>
 </div>
 
 
-<div class="header">
+<div class="header">												<!-- Верхній елемент -->
 
-<div  height="100%" width="100%" id="main">                                            
-  <button class="openbtn" onclick="openNav()">☰</button>  
+<div >                                            
+  <button class="openbtn" onclick="openNav()">☰</button>  			<!-- Кнопка відкриття сайдбару-->
 </div >
-<img src="https://kpi.ua/images/iszzi.png" height="8%" width="8%" >
+
+<img src="https://kpi.ua/images/iszzi.png" alt="logo">				<!-- Зоображення-->
 <h1>Розклад занять на тиждень</h1>
 
 
-</div>
+</div>	<!--Таблиця з розкладом-->
 
 	<table>
 	
@@ -97,6 +101,11 @@
 	</tr>
 	</table>
 <script>
+
+<!--Для кнопок для сайдбару:
+			//Відкрити  
+			//Закрити-->
+
 function openNav() {
   document.getElementById("Sidebar").style.width = "25%";
 }
@@ -105,15 +114,17 @@ function closeNav() {
   document.getElementById("Sidebar").style.width = "0";
 }
 
-
+<!--Перевірка паролю -->
 
 function checkPW(){
 	var password = document.getElementById("password")
     var rpassword = document.getElementById("rpassword");
   if(password.value != rpassword.value) {
-    rpassword.setCustomValidity("Passwords Don't Match");
+	rpassword.classList.add("err");							<!--Якщо неправильно - застосовуємо інший стиль для поля вводу//-->
+    errmsg.innerHTML = "Перевірте правильність паролів!\n";	<!--І додамо текст в label//-->
   } else {
-    rpassword.setCustomValidity('');
+	rpassword.classList.remove("err");						<!--Якщо виправлено- приберемо//-->
+    errmsg.innerHTML = "";
   }
   
 }
