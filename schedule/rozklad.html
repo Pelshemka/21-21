@@ -11,7 +11,7 @@
 
  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   
-<form action="/submit" method="post" target="_blank">
+<form onsubmit="return false;" action="/submit" method="post" >
 
 <label for="name">Ім'я: </label> 
 <input type="text" id="name" name="name" required><br><br>
@@ -26,9 +26,9 @@
 <input type="password" id="password" name="password" required><br><br>
 
 <label for="password">Підтвердити пароль: </label> 
-<input type="password" id="password" name="password" required><br><br>
+<input type="password" id="rpassword" name="rpassword" required><br><br>
 
-<input type="submit" value="Зареєструватися">
+<input type="submit" onclick="return checkPW()" value="Зареєструватися">
 </form>
 </div>
 
@@ -47,6 +47,7 @@
 	<table>
 	
 	<tr>
+	<th></th>
 	<th>Понеділок</th>
 	<th>Вівторок</th>
 	<th>Середа</th>
@@ -56,38 +57,43 @@
 	</tr>
 	
 	<tr>
-	<td class="pz">СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
+	<th><p>8.30-9.15</p><p>9.20-10.05</p></th>
+	<td class="sem">Право <p>406</p></td>
+	<td class="pz">Іноземна мова <p>407а</p></td>
+	<td class="lec">ТІМ<p>101</p></td>
+	<td class="pz">Фіз Вих <p>-</p></td>
+	<td>СР <p>404</p></td>
+	<td>СР <p>107</p></td>
 	</tr>
 	
 	<tr>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
+	<th><p>10.25-11.10</p><p>11.15-12.00</p></th>
+	<td class="pz">Фіз Вих <p>-</p></td>
+	<td class="pz">Фіз Вих <p>-</p></td>
+	<td class="lz">ТС <p>410</p></td>
+	<td class="pz">ТІМ<p>503</p></td>
+	<td class="lec">Право <p>101</p></td>
+	<td>СР <p>107</p></td>
 	</tr>
 	
-		<tr>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
+	<tr>
+	<th><p>12.10-13.05</p><p>13.10-13.55</p></th>
+	<td class="pz">Програмування-3<p>406</p></td>
+	<td class="lz">ТІМ<p>503?</p></td>
+	<td class="lz">ТС <p>410</p></td>
+	<td class="pz">Іноземна мова <p>406</p></td>
+	<td class="lec">ТІК <p>101</p></td>
+	<td>СР <p>107</p></td>
 	</tr>
-		<tr>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
-	<td>СР <p>101</p></td>
+	
+	<tr>
+	<th><p>16.10-16.55</p><p>17.00-17.45</p></th>
+	<td>СР <p>503</p></td>
+	<td>СР <p>6</p></td>
+	<td class="lec">Програмування-3<p>101</p></td>
+	<td>СР <p>503</p></td>
+	<td>СР <p>6</p></td>
+	<td></td>
 	</tr>
 	</table>
 <script>
@@ -97,6 +103,19 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("Sidebar").style.width = "0";
+}
+
+
+
+function checkPW(){
+	var password = document.getElementById("password")
+    var rpassword = document.getElementById("rpassword");
+  if(password.value != rpassword.value) {
+    rpassword.setCustomValidity("Passwords Don't Match");
+  } else {
+    rpassword.setCustomValidity('');
+  }
+  
 }
 </script>
 
