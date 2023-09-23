@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Розклад занять</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="rozkl.css" >
+</head>
 
+<body>
+<div id="Sidebar" class="sidebar">
+
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  
+<form action="/submit" method="post" target="_blank">
+
+<label for="name">Ім'я: </label> 
+<input type="text" id="name" name="name" required><br><br>
+
+<label for="surname">Прізвище: </label> 
+<input type="text" id="surname" name="surname" required><br><br>
+
+<label for="email">Email:</label>
+ <input type="email" id="email" name="email" required><br><br>
+ 
+<label for="password">Пароль: </label> 
+<input type="password" id="password" name="password" required><br><br>
+
+<label for="password">Підтвердити пароль: </label> 
+<input type="password" id="password" name="password" required><br><br>
+
+<input type="submit" value="Зареєструватися">
+</form>
+</div>
+
+
+<div class="header">
+
+<div  height="100%" width="100%" id="main">                                            
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div >
+<img src="https://kpi.ua/images/iszzi.png" height="8%" width="8%" >
+<h1>Розклад занять на тиждень</h1>
+
+
+</div>
+
+	<table>
+	
+	<tr>
+	<th>Понеділок</th>
+	<th>Вівторок</th>
+	<th>Середа</th>
+	<th>Четвер</th>
+	<th>П'ятниця</th>
+	<th>Субота</th>
+	</tr>
+	
+	<tr>
+	<td class="pz">СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	</tr>
+	
+	<tr>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	</tr>
+	
+		<tr>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	</tr>
+		<tr>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	<td>СР <p>101</p></td>
+	</tr>
+	</table>
+<script>
+function openNav() {
+  document.getElementById("Sidebar").style.width = "25%";
+}
+
+function closeNav() {
+  document.getElementById("Sidebar").style.width = "0";
+}
+</script>
+
+</body>
+
+</html>
