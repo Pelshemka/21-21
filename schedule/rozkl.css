@@ -1,5 +1,5 @@
 
- .header{
+ .header{			/*Стилі для верхнього елемента-меню*/
   width: 100%;
   overflow: hidden;
   background-color: #3D5AF1;
@@ -8,7 +8,7 @@
   padding-top:3%;
   padding-bottom:3%;
 }
-.header div,img,h1{
+.header div,img,h1{	/* Для компонентів цього меню */
 	  margin:5px;
 	  float:left;
 }
@@ -17,37 +17,37 @@
 	  width: 8%;
 }
 
-body{
+body{				/* Фон та й таке*/
 	color:#0E153A;
 	background-color: #E2F3F5;
 	 font-family: Helvetica;
 }
 
-label {
+label {				/* Підписи в формі реестрації */
   display: block;
   margin-bottom: 0.25rem;
 }
-form {
+form {				/* Форма реестрації*/
  margin: 5rem;
  }
 .err { background: #faad91; border: 5px solid #fc6f03; }
 
-table, th, td {
+table, th, td {		/* Для таблиці і її елементів */
   border: 1px solid #0E153A;
   text-align:center;
   background-color: #E2F3F5;
 }
-td{
+td{					/* Для комірок таблиці*/
 	width:15%;
 	height:5%;
 }
-table {
+table {				/* Розміри і відступи в таблиці*/
 	margin: 100px auto;
   width: 90%;
   border-collapse: collapse;
 }
 
-.pz {
+.pz {				/* Стилі для різних видів занять*/
 	background-color: #fcdc79 ;	
 }
 .sem {
@@ -60,7 +60,7 @@ table {
 	background-color: #faad91 ;	
 }
 
-.sidebar {
+.sidebar {		/* Стиль для сайдбару коли згорнутий*/
   height: 100%;
   width: 0;
   position: fixed;
@@ -73,7 +73,7 @@ table {
   padding-top: 60px;
 }
 
-.sidebar .closebtn {
+.sidebar .closebtn { /* Для хрестика в сайдбарі*/
   position: absolute;
   top: 0;
   right: 25px;
@@ -81,7 +81,7 @@ table {
   margin-left: 50px;
 }
 
-.openbtn {
+.openbtn {			/* Кнопка відкриття сайдбару*/
   font-size: 20px;
   cursor: pointer;
   background-color: #22D1EE;
