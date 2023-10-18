@@ -2,12 +2,23 @@
 body {
   margin: 0%;
 }
+p,ol{
+	color: #0F2C59;
+	font: 24px/1 "Fira Sans", sans-serif;
+}
+h2{ font: small-caps 24px/1 sans-serif;}
+hr {
+	height:10px;
+	background-color: #0F2C59;
+}
 section {
-	margin-left:25%;
-	padding:50px 20px;
+	margin-left:10%;
+	padding:100px 20px;
+
 }
 
-ul {display:flex;
+ul {
+	display:flex;
 	position: fixed;
 	margin:0% 0% 0% 10% ;
 	list-style-type: none;
@@ -15,7 +26,8 @@ ul {display:flex;
 	background-color:#DAC0A3;
 	float: left;
 }
-div {display:block;
+div {
+	display:block;
 	position: fixed;
 	margin:0% ;
 	height:100%;
@@ -27,7 +39,7 @@ div {display:block;
 
 ul li a, div li a  {
   display: block;
-  color: white;
+  color: #0F2C59;
   text-align: center;
   padding: 15px 20px;
   text-decoration: none;
