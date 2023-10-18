@@ -17,7 +17,7 @@ section {
 
 }
 
-ul {
+ul.hor {
 	display:flex;
 	position: fixed;
 	margin:0% 0% 0% 10% ;
@@ -36,8 +36,13 @@ div {
 	background-color:#F8F0E5;
 	list-style-type: none;
 }
+div ul {
+	margin:0;
+	display: block;
+	list-style-type: none;	
+}
 
-ul li a, div li a  {
+ul.hor li a, div li a  {
   display: block;
   color: #0F2C59;
   text-align: center;
@@ -45,12 +50,13 @@ ul li a, div li a  {
   text-decoration: none;
 }
 
-ul li a:hover,div li a:hover {
+ul.hor li a:hover,div li a:hover {
   background-color: #EADBC8;
 }
-ul li {
+ul.hor li {
   float: left;
 }
-div li a {
+div ul li a {
+	margin:0;
   text-align: center;
 }
