@@ -18,7 +18,7 @@ div {
 
 <body>
   
-  <div onClick="ChBg()">
+  <div onClick="ChBg()">// на клацання 
   <p id="111">Click to change background</p>
 </div>
   
@@ -26,8 +26,8 @@ div {
 function ChBg() {
 
     var randomColor = Math.floor(Math.random()*16777215).toString(16); /* заокруглюємо випадкове число від 0 до 1
-																		помножене на 16777215(всі можливі комбінації RGB)
-																		і конвертуємо його 16-кове представлення в рядок */
+									помножене на 16777215(всі можливі комбінації RGB)
+									і конвертуємо його 16-кове представлення в рядок */
     var rgbValue = "#" + randomColor; // рядок буде = "#A06354"
     document.body.style.backgroundColor = rgbValue; // за допомогою DOM міняємо фон
 	
