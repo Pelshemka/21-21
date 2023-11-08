@@ -3,12 +3,11 @@
 <style>
 div {
   width: 150px;
-  height: 100px;
+  height: 50px;
   border: 1px solid black;
   margin: 10px;
   padding: 5px;
   text-align: center;
-  background-color: lightgray;
 }
 </style>
 </style>
@@ -19,18 +18,20 @@ div {
 
 <body>
   
-  <div onClick="clickChangeBg()">
-  <p id="demo2">Click to change background</p>
+  <div onClick="ChBg()">
+  <p id="111">Click to change background</p>
 </div>
   
 <script>
-function clickChangeBg() {
+function ChBg() {
 
-    let randomColor = Math.floor(Math.random()*16777215).toString(16);
-    let rgbValue = "#" + randomColor;
-    document.body.style.backgroundColor = rgbValue;
+    var randomColor = Math.floor(Math.random()*16777215).toString(16); /* заокруглюємо випадкове число від 0 до 1
+																		помножене на 16777215(всі можливі комбінації RGB)
+																		і конвертуємо його 16-кове представлення в рядок */
+    var rgbValue = "#" + randomColor; // рядок буде = "#A06354"
+    document.body.style.backgroundColor = rgbValue; // за допомогою DOM міняємо фон
 	
-	document.getElementById("demo2").innerHTML = rgbValue;
+	document.getElementById("111").innerHTML = rgbValue;// вибираємо елемент за id  i міняємо наповнення елемента на код кольору
 }
 </script>
 
