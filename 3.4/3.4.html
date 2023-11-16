@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+div {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+</style>
+</style>
+<head>
+  <meta charset="utf-8">
+  <title>3.2</title>
+</head>
+
+<body>
+  
+
+<div>
+  <input id="3">
+  <button type="button" onclick="check3()">Check if integer</button>
+  <p id="33"></p>
+</div>
+
+
+  
+<script>
+
+function check3 {
+var num = document.getElementById("3");
+ document.getElementById("33").innerHTML = checkInteger(3);
+};
+
+function modifyArray(ar){
+	ar.unshift('start');
+	ar.pop();
+	ar[2]='modified';
+	return ar;
+};
+
+function arrayOperations(ar){
+	ar.push('end');
+	ar.shift();
+	ar.splice(3,0,'middle');
+	return ar;
+};
+
+function checkInteger(n){
+	if (Number.isInteger(n)){
+	 return "Ціле";
+  }
+  return "Не ціле";
+
+};
+
+function calculateCircleArea(r){
+   return x.toFixed((Math.PI) * radius * radius);
+};
+
+
+function displayCurrentDate{
+};
+
+</script>
+
+</body>
+</html>
