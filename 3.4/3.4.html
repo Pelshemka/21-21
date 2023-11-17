@@ -1,37 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<style>
-div {
-  border: 1px solid black;
-  margin: 10px;
-  padding: 5px;
-  text-align: center;
-}
-</style>
-</style>
-<head>
-  <meta charset="utf-8">
-  <title>3.2</title>
-</head>
-
+<html>
 <body>
-  
 
-<div>
-  <input id="3">
-  <button type="button" onclick="check3()">Check if integer</button>
-  <p id="33"></p>
-</div>
+<h2>3/4 №21</h2>
 
+<p>Enter a number:</p>
+<input id="number" type="number">
 
-  
+<p>Enter an array (comma separated):</p>
+<input id="array" type="text">
+
+<button onclick="calculate()">Submit</button>
+
+<p id="demo"></p>
+
 <script>
-
-function check3 {
-var num = document.getElementById("3");
- document.getElementById("33").innerHTML = checkInteger(3);
-};
-
 function modifyArray(ar){
 	ar.unshift('start');
 	ar.pop();
@@ -51,17 +34,50 @@ function checkInteger(n){
 	 return "Ціле";
   }
   return "Не ціле";
-
 };
 
 function calculateCircleArea(r){
-   return x.toFixed((Math.PI) * radius * radius);
+   return (Math.PI * r * r).toFixed(2);
 };
+function displayCurrentDate() {
+    let date = new Date();
 
+    let day = String(date.getDate()).padStart(2, '0');
+    let month = String(date.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let year = date.getFullYear();
 
-function displayCurrentDate{
-};
+    let hours = date.getHours();
+    let minutes = String(date.getMinutes()).padStart(2, '0');
 
+    let ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    hours = String(hours).padStart(2, '0');
+
+    let date1 = `${day}.${month}.${year} ${hours}.${minutes}`;
+    let date2 = `${month}-${day}-${year} ${hours}.${minutes} ${ampm}`;
+
+    return `Date in DD.MM.YYYY HH.mm format: ${date1} <br> Date in MM-DD-YYYY HH.mm AM/PM format: ${date2}`;
+}
+function calculate() {
+	let number = document.getElementById("number").value;
+	let array = document.getElementById("array").value.split(',').map(String);
+	
+	let modifiedArray = modifyArray(array.slice());
+	let operatedArray = arrayOperations(array.slice());
+	let integerCheck = checkInteger(Number(number));
+	let circleArea = calculateCircleArea(Number(number));
+	let CurrentDate= displayCurrentDate ();
+
+	document.getElementById("demo").innerHTML = 
+	`<b>Original Array:</b> ${array} <br>
+	<b>Modified Array:</b> ${modifiedArray} <br>
+	<b>Operated Array:</b> ${operatedArray} <br>
+	<b>Check Integer:</b> ${integerCheck} <br>
+	<b>Circle Area:</b> ${circleArea}<br>
+	${CurrentDate};
+	`;
+}
 </script>
 
 </body>
