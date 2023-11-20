@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3.6(5) 21-21</title>
+</head>
+<body>
+
+<button id="myButton">Натисніть мене!</button>
+<p id="message"></p>
+<p id="message2"></p>
+
+<script>
+document.addEventListener("click", function() {
+    document.getElementById("message").innerHTML = "Подія виникла!";
+});
+document.addEventListener("click", function() {
+    document.getElementById("message2").innerHTML = "Ще один обробник події!";
+});
+</script>
+
+</body>
+</html>
