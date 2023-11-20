@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя сторінка</title>
+</head>
+<body>
+
+<button id="myButton">Кнопка</button>
+<input type="text" id="myInput">
+<p id="message"></p>
+
+<script>
+let myInput = document.getElementById("myInput");
+myInput.onfocus = function() {
+    document.getElementById("message").innerHTML = "Елемент отримав фокус!";
+};
+myInput.onblur = function() {
+    document.getElementById("message").innerHTML = "Елемент втратив фокус!";
+};
+</script>
+
+</body>
+</html>

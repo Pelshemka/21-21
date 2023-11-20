@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя сторінка</title>
+</head>
+<body>
+
+<button id="myButton">Натисніть мене!</button>
+<p id="message"></p>
+
+<input type="text" id="myInput">
+
+<script>
+let myButton = document.getElementById("myButton");
+myButton.onclick = function() {
+    document.getElementById("message").innerHTML = "Кнопка була натиснута!";
+};
+
+let myInput = document.getElementById("myInput");
+myInput.onkeydown = function() {
+    console.log("Клавіша була натиснута!");
+	alert("Кнопка була натиснута!");
+};
+
+
+</script>
+
+</body>
+</html>
