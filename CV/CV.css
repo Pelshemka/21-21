@@ -87,3 +87,32 @@ header h1 {
 header .header-1{
   background-image: repeating-radial-gradient(farthest-side at 5px 5px,#553c9a, #ee4b2b, #553c9a);
 }
+
+div.v {
+	display:inline;
+
+
+	background-color:#F8F0E5;
+	list-style-type: none;
+}
+div.v ul {
+	display: block;
+	list-style-type: none;	
+}
+
+div.v li a  {
+  display: block;
+  color: #0F2C59;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+div.v li a:hover {
+  background-color: #EADBC8;
+}
+
+div.v ul li a {
+
+  text-align: center;
+}
