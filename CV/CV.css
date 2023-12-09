@@ -1,5 +1,6 @@
 body {
 background-color:#ffffff;
+ font-family: 'Press Start 2P', serif;
 }
 
 div.border{
@@ -63,9 +64,6 @@ div.border{
   width: 100%;
 }
 
-.sticky + .content {
-  padding-top: 102px;
-}
 
 header {
   width: 100%;
@@ -82,19 +80,23 @@ header h1 {
   font-weight: 600;
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;   
+  background-clip: text;  
+
 }
 header .header-1{
   background-image: repeating-radial-gradient(farthest-side at 5px 5px,#553c9a, #ee4b2b, #553c9a);
+  font-family: 'Press Start 2P', serif;
 }
 
 div.v {
 	display:inline;
-
-
 	background-color:#F8F0E5;
 	list-style-type: none;
 }
+div.v h2{
+  padding: 15px 20px;
+}
+
 div.v ul {
 	display: block;
 	list-style-type: none;	
@@ -115,4 +117,26 @@ div.v li a:hover {
 div.v ul li a {
 
   text-align: center;
+}
+
+section {
+	margin: 20% 0%;
+	display:inline-block;
+}
+
+
+	
+p.pic {
+	position:relative;
+	top:70%;
+    float: left;
+    margin: 0;
+	z-index:-1;
+    }
+	
+
+.pic { 
+	float: left;
+	font-size:2000%;
+	display: inline-block;
 }
