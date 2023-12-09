@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="CV.css">
+	<link id="pagestyle" rel="stylesheet" type="text/css" href="CV.css">
 	<meta charset="utf-8">
 	<title>CV</title>
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -35,6 +35,8 @@
 
 <div >                                            
   <button class="openbtn" onclick="openNav()">☰</button>  			<!-- Кнопка відкриття сайдбару-->
+  <input type="checkbox" id="toggle" onchange="swapStyleSheet()">
+  <label for="toggle">Toggle dark mode</label>
 </div >
 
 </div>
@@ -53,7 +55,7 @@
   <section id="nav">
      <p class="pic"> &#x1F4BC;</p>
 <h2> Work Experience </h2>
-<p>A navigation bar (navbar) is a crucial component of web design and plays
+<p class="descr">A navigation bar (navbar) is a crucial component of web design and plays
  a vital role in user navigation. It is typically a strip at the top of the webpage,
  containing links to the main sections of the website. </p>
  </section >
@@ -108,6 +110,15 @@
  containing links to the main sections of the website. </p>
  </section >
 <script>
+function swapStyleSheet() {
+      var checkbox = document.getElementById("toggle");
+      var stylesheet = document.getElementById("pagestyle");
+      if (checkbox.checked) {
+        stylesheet.setAttribute("href", "dark.css");
+      } else {
+        stylesheet.setAttribute("href", "CV.css");
+      }
+    }
 
 <!--Для кнопок для сайдбару:
 			//Відкрити  
