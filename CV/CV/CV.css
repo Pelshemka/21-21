@@ -1,0 +1,142 @@
+body {
+background-color:#ffffff;
+ font-family: 'Press Start 2P', serif;
+}
+
+div.border{
+	background-color:#000000;
+	 border: 4px solid;
+	 border-image:linear-gradient(to right, darkblue, darkorchid) 1;
+}
+
+.sidebar {		/* Стиль для сайдбару коли згорнутий*/
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #22D1EE;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-radius:0% 100% 100% 0%;
+}
+
+.sidebar .closebtn { /* Для хрестика в сайдбарі*/
+  position: absolute;
+  top:0px;
+  left:0px;
+  text-decoration:none;
+  font-size: 36px;
+  margin:10px;
+  z-index:3;
+}
+
+.openbtn {			/* Кнопка відкриття сайдбару*/
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #22D1EE;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+header {
+  width: 100%;
+  height: 40vh;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  position: relative;
+  left: 10%;
+  width: 80%;
+  font-size: 60px;
+  font-weight: 600;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;  
+
+}
+header .header-1{
+  background-image: repeating-radial-gradient(farthest-side at 5px 5px,#553c9a, #ee4b2b, #553c9a);
+  font-family: 'Press Start 2P', serif;
+}
+
+div.v {
+	display:inline;
+	background-color:#F8F0E5;
+	list-style-type: none;
+}
+div.v h2{
+  padding: 15px 20px;
+}
+
+div.v ul {
+	display: block;
+	list-style-type: none;	
+}
+
+div.v li a  {
+  display: block;
+  color: #0F2C59;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+div.v li a:hover {
+  background-color: #EADBC8;
+}
+
+div.v ul li a {
+
+  text-align: center;
+}
+
+section {
+	margin: 20% 0%;
+	display:inline-block;
+}
+
+
+	
+p.pic {
+	position:relative;
+	top:70%;
+    float: left;
+    margin: 0;
+	z-index:-1;
+    }
+	
+
+.pic { 
+	float: left;
+	font-size:2000%;
+	display: inline-block;
+}
