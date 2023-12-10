@@ -120,7 +120,8 @@ div.v ul li a {
 }
 
 section {
-	margin: 20% 0%;
+	margin: 10% 0%;
+	padding:5%;
 	display:inline-block;
 }
 
@@ -132,11 +133,19 @@ p.pic {
     float: left;
     margin: 0;
 	z-index:-1;
-    }
-	
-
-.pic { 
-	float: left;
 	font-size:2000%;
 	display: inline-block;
+    }
+
+table {
+  border-collapse: collapse;
+  border: 2px solid black;
+  margin:10%;
 }
+
+th, td {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+
