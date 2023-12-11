@@ -1,7 +1,7 @@
 body {
-background-color:#EEEEEE;
+background-color:#001B79;
  font-family: 'Press Start 2P', serif;
- color:#295BA7;
+ color:#FF90C2;
 }
 
 
@@ -13,7 +13,7 @@ background-color:#EEEEEE;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #94AC3C;
+  background-color: #1640D6;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -33,7 +33,7 @@ background-color:#EEEEEE;
 .topbar {			/* Кнопка відкриття сайдбару*/
   font-size: 20px;
   cursor: pointer;
-  background-color: #94AC3C;
+  background-color: #1640D6;
   color: white;
   padding: 10px 15px;
   margin:5px;
@@ -42,7 +42,7 @@ background-color:#EEEEEE;
 }
 
 .top-container {
-  background-color: #fceec2;
+  background-color: #000e40;
   padding: 30px 0px;
   text-align: center;
 }
@@ -51,7 +51,7 @@ background-color:#EEEEEE;
   padding: 10px 16px;
   background: #637329;
   color: #eeeeee;
-  	 z-index:1;
+  	z-index:1;
 }
 
 .content {

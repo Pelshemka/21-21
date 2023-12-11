@@ -29,7 +29,6 @@
 <li><a href="#sk">Skills</a></li>
 <li><a href="#ce"> Certifications </a></li>
 <li><a href="#lang"> Languages </a></li>
-<li><a href="#ve"> Volunteer Experience </a></li>
 <li><a href="#hi"> Hobbies and Interests </a></li>
 <li><a href="#ci"> Contact Information  </a></li>
 </ul>
@@ -55,43 +54,39 @@
 <table>
   <tr>
     <th>Section</th>
-    <th>Description</th>
+    <th>Brief description</th>
   </tr>
   <tr>
     <td>Contact Information</td>
-    <td>Include your name, email address, phone number, and location.</td>
+    <td>Senich Olga, 0955933228, senicholgaua@gmail.com</td>
   </tr>
   <tr>
     <td>Personal Statement</td>
-    <td>A brief summary of your professional background, skills, and career goals.</td>
+    <td> hardworking, enthusiastic, excellent communication skills, eager to use my skills to make a difference in a new job.</td>
   </tr>
   <tr>
     <td>Work Experience</td>
-    <td>A detailed list of your previous work experience, including job titles, dates of employment, and key responsibilities.</td>
+    <td>None.</td>
   </tr>
   <tr>
     <td>Education</td>
-    <td>A list of your educational qualifications, including the name of the institution, degree, and date of graduation.</td>
+    <td>A general certificate of secondary education, expecting to graduate as bachelor in speciality 125 Cybersecurity </td>
   </tr>
   <tr>
     <td>Skills</td>
-    <td>A list of your relevant skills, including both hard and soft skills.</td>
+    <td> Coding in C, C++, HTML, CSS, JavaScript. MS Office.</td>
   </tr>
   <tr>
     <td>Certifications</td>
-    <td>A list of any professional certifications you have earned.</td>
+    <td>Cambrige PETfS (B2 English)</td>
   </tr>
   <tr>
     <td>Languages</td>
-    <td>A list of languages you speak and your proficiency level.</td>
-  </tr>
-  <tr>
-    <td>Volunteer Experience</td>
-    <td>A list of any volunteer work you have done.</td>
+    <td>Ukrainian(fluent, native speaker), English(B2), German(A2)</td>
   </tr>
   <tr>
     <td>Hobbies and Interests</td>
-    <td>A list of your hobbies and interests.</td>
+    <td>Art, running and learning new languages</td>
   </tr>
 </table>
 
@@ -100,7 +95,7 @@
    <p class="pic"> &#x1F4AC;</p>
 <h2> Personal Statement</h2>
 <p>I am a hardworking and enthusiastic person with great communication skills.
-I’m always eager to learn new things. I’m passionate about [insert your field of interest here] 
+I’m always eager to learn new things. I’m passionate about  learning new languages, including coding ones
  and I’m excited to start a new job where I can use my skills and experience to 
  make a difference. </p>
  </section >
@@ -135,27 +130,39 @@ in National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Inst
 <h2> Languages </h2>
 <p> I speak Ukrainian(fluent, native speaker), English(B2), German(A2) </p>
  </section >
-  <section id="ve">
-       <p class="pic">  &#x1F91D;</p>
-<h2> Volunteer Experience </h2>
-<p>A navigation bar (navbar) is a crucial component of web design and plays
- a vital role in user navigation. It is typically a strip at the top of the webpage,
- containing links to the main sections of the website. </p>
- </section >
+  
   <section id="hi">
        <p class="pic"> &#x1F3A8;</p>
 <h2> Hobbies and Interests </h2>
-<p>A navigation bar (navbar) is a crucial component of web design and plays
- a vital role in user navigation. It is typically a strip at the top of the webpage,
- containing links to the main sections of the website. </p>
+<p>My hobbies are art, running and learning new languages. </p>
  </section >
    <section id="ci">
        <p class="pic"> &#x1F4DE;</p>
+	   <address>
 <h2>Contact Information </h2>
-<p>A navigation bar (navbar) is a crucial component of web design and plays
- a vital role in user navigation. It is typically a strip at the top of the webpage,
- containing links to the main sections of the website. </p>
+  You can contact me at <br>
+  <a href="tel:+0955933222">+0955933222</a><br>
+  But better write to my email<br>
+  <a href="mailto:senicholgaua@gmail.com">senicholgaua@gmail.com</a><br>
+</address>
  </section >
+ 
+ <form class="reg" action="/submit" method="post" target="_blank">
+	<h1>Or I can contact you</h1>
+	
+	<label for="name">Name and Surname </label> <br>
+	<input type="text" id="name" name="name" required><br>
+
+	<label for="email">Email</label><br>
+	<input type="email" id="email" name="email" required><br>
+
+	<label for="password">Phone number </label> <br>
+	<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+
+
+<input type="submit" value="Send">
+</form>
+ 
 <script>
 function swapStyleSheet() {
       var checkbox = document.getElementById("toggle");
