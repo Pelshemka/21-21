@@ -4,7 +4,7 @@ background-color:#f5d9c4;
  color:#1F1717;
 }
 
-
+a{ text-decoration:none;}
 
 .sidebar {		/* Стиль для сайдбару коли згорнутий*/
   height: 100%;
@@ -29,9 +29,48 @@ background-color:#f5d9c4;
   font-size: 36px;
   margin:10px;
   z-index:3;
+  cursor: pointer;
 }
 
-.topbar {			/* Кнопка відкриття сайдбару*/
+
+
+.top-container {			/* Найверхній контейнер*/
+  background-color: #FCF5ED;
+  padding: 30px 0px;
+  text-align: center;
+}
+header {						/*Хедер в верхньому контейнері*/
+  width: 100%;
+  height: 40vh;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+}
+header h1{						/*Хедер в верхньому контейнері текст*/
+  background-image: radial-gradient(farthest-side at 5px 5px,#1F1717, #CE5A67, #F4BF96);
+  font-family: 'Press Start 2P', serif;
+  position: relative;
+  left: 10%;
+  width: 80%;
+  font-size: 60px;
+  font-weight: 600;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text; 
+}
+
+.header {					/* Верхня панель*/
+  padding: 10px 16px;
+  background: #CE5A67;
+  color: #eeeeee;
+  	z-index:1;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.topbar {						/* Кнопки верхньої панелі*/
   font-size: 20px;
   cursor: pointer;
   background-color: #a84a55;
@@ -41,95 +80,48 @@ background-color:#f5d9c4;
   border: none;
   float:left;
 }
-
-.top-container {
-  background-color: #FCF5ED;
-  padding: 30px 0px;
-  text-align: center;
+.up {
+	display:inline-block;
 }
 
-.header {
-  padding: 10px 16px;
-  background: #CE5A67;
-  color: #eeeeee;
-  	z-index:1;
-}
 
-.content {
-  padding: 16px;
-}
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-header {
-  width: 100%;
-  height: 40vh;
-  display: inline-block;
-  flex-direction: column;
-  align-items: center;
-}
-header h1 {
-  position: relative;
-  left: 10%;
-  width: 80%;
-  font-size: 60px;
-  font-weight: 600;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;  
-
-}
-header .header-1{
-  background-image: radial-gradient(farthest-side at 5px 5px,#1F1717, #CE5A67, #F4BF96);
-  font-family: 'Press Start 2P', serif;
-}
-
-div.v {
+.v { 						/*Вертикальне меню в сайдбарі*/
 	display:inline;
 	background-color:#F8F0E5;
 	list-style-type: none;
 }
-div.v h2{
+.v h2{
   padding: 15px 20px;
 }
-
-div.v ul {
+.v ul {
 	display: block;
 	list-style-type: none;	
 	padding:3%;
 }
-
-div.v li a  {
+.v li a  {
   display: block;
   color: #CE5A67;
   text-align: center;
   padding: 15px 20px;
   text-decoration: none;
 }
-
-div.v li a:hover {
+.v li a:hover {
   background-color: #EADBC8;
 }
-
-div.v ul li a {
+.v ul li a {
 
   text-align: center;
 }
 
-section {
+section { 					/*Секції*/
 	margin: 10% 0%;
 	padding:5%;
 	display:inline-block;
 	color:#1F1717;
 }
 
-
-	
-p.pic {
+p.pic {						/*Емоджі замість картинок*/
 	position:relative;
 	top:70%;
     float: left;
@@ -139,23 +131,20 @@ p.pic {
 	display: inline-block;
     }
 
-table {
+table {						 /*Таблиці*/
   border-collapse: collapse;
   border: 2px solid #1F1717;
    padding:3%;
   margin: 5% 10% 5% 30%;
 }
-
 th, td {
   border: 2px solid #1F1717;
   padding: 10px;
 }
 
-.up {
-	display:inline-block;
-}
-a{ text-decoration:none;}
 
+
+							/*Реєстраційна форма*/
 .reg {
 	position:relative;
   bottom:450px;
@@ -164,7 +153,6 @@ a{ text-decoration:none;}
   background-color: #CE5A67;
   box-sizing:border-box;  
 }
-
 .reg input[type=text], .reg input[type=password], .reg input[type=email], .reg input[type=tel] {
   width: 95%;
   padding: 0.5%;
@@ -172,11 +160,9 @@ a{ text-decoration:none;}
   border: none;
   background-color: #F4BF96;
 }
-
 .reg input[type=text]:focus, .reg input[type=password]:focus, .reg input[type=email]:focus, .reg input[type=tel]:focus {
    background-color: #fad2b4;
 }
-
 .reg input[type=submit]{
   background-color: #ebfca7;
   cursor: pointer;
@@ -188,19 +174,23 @@ a{ text-decoration:none;}
   color:#e09c69;
 
 }
-
 .reg input[type=submit]:hover {
   border: 1px solid #FCF5ED;
 }
-
 .reg label {
 	font-size:150%;
 	padding:2%;
 }
+
+							/*Адреси*/
+
 address {
  position:absolute; 
  left:40%;
 }
+
+							/*Кнопка вгору*/
+
 #goUP {
   position: fixed;
   width:5%;
