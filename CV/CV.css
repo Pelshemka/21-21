@@ -1,7 +1,7 @@
 body {
-background-color:#EEEEEE;
+background-color:#f5d9c4;
  font-family: 'Press Start 2P', serif;
- color:#295BA7;
+ color:#1F1717;
 }
 
 
@@ -13,7 +13,7 @@ background-color:#EEEEEE;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #94AC3C;
+  background-color: #F4BF96;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -23,6 +23,7 @@ background-color:#EEEEEE;
 .sidebar .closebtn { /* Для хрестика в сайдбарі*/
   position: absolute;
   top:0px;
+  color:#CE5A67;
   left:0px;
   text-decoration:none;
   font-size: 36px;
@@ -33,7 +34,7 @@ background-color:#EEEEEE;
 .topbar {			/* Кнопка відкриття сайдбару*/
   font-size: 20px;
   cursor: pointer;
-  background-color: #94AC3C;
+  background-color: #a84a55;
   color: white;
   padding: 10px 15px;
   margin:5px;
@@ -42,14 +43,14 @@ background-color:#EEEEEE;
 }
 
 .top-container {
-  background-color: #fceec2;
+  background-color: #FCF5ED;
   padding: 30px 0px;
   text-align: center;
 }
 
 .header {
   padding: 10px 16px;
-  background: #637329;
+  background: #CE5A67;
   color: #eeeeee;
   	z-index:1;
 }
@@ -83,7 +84,7 @@ header h1 {
 
 }
 header .header-1{
-  background-image: radial-gradient(farthest-side at 5px 5px,#295BA7, #94AC3C, #FCC314);
+  background-image: radial-gradient(farthest-side at 5px 5px,#1F1717, #CE5A67, #F4BF96);
   font-family: 'Press Start 2P', serif;
 }
 
@@ -103,7 +104,7 @@ div.v ul {
 
 div.v li a  {
   display: block;
-  color: #0F2C59;
+  color: #CE5A67;
   text-align: center;
   padding: 15px 20px;
   text-decoration: none;
@@ -122,7 +123,7 @@ section {
 	margin: 10% 0%;
 	padding:5%;
 	display:inline-block;
-	color:#000000;
+	color:#1F1717;
 }
 
 
@@ -139,13 +140,13 @@ p.pic {
 
 table {
   border-collapse: collapse;
-  border: 2px solid black;
+  border: 2px solid #1F1717;
    padding:3%;
   margin: 5% 10% 5% 30%;
 }
 
 th, td {
-  border: 2px solid #295BA7;
+  border: 2px solid #1F1717;
   padding: 10px;
 }
 
@@ -159,7 +160,7 @@ a{ text-decoration:none;}
   bottom:450px;
   padding:3%;
   margin: 0% 10% 0% 50%;
-  background-color: #94AC3C;
+  background-color: #CE5A67;
   box-sizing:border-box;  
 }
 
@@ -168,11 +169,11 @@ a{ text-decoration:none;}
   padding: 0.5%;
   margin: 1%;
   border: none;
-  background-color: #e1ebbe;
+  background-color: #F4BF96;
 }
 
 .reg input[type=text]:focus, .reg input[type=password]:focus, .reg input[type=email]:focus, .reg input[type=tel]:focus {
-   background-color: #f1f7da;
+   background-color: #fad2b4;
 }
 
 .reg input[type=submit]{
@@ -183,12 +184,12 @@ a{ text-decoration:none;}
   margin: 5%;
   border: none;
   font-family: 'Press Start 2P', serif;
-  color:#295BA7;
+  color:#e09c69;
 
 }
 
 .reg input[type=submit]:hover {
-  border: 1px solid #ffffff;
+  border: 1px solid #FCF5ED;
 }
 
 .reg label {
