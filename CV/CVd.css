@@ -154,7 +154,10 @@ th, td {
 .up {
 	display:inline-block;
 }
-a{ text-decoration:none;}
+a{ 
+color: #ED5AB3;
+text-decoration:none;
+}
 
 .reg {
 	position:relative;
