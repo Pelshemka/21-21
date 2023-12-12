@@ -99,6 +99,7 @@ div.v h2{
 div.v ul {
 	display: block;
 	list-style-type: none;	
+	padding:3%;
 }
 
 div.v li a  {
@@ -199,4 +200,21 @@ a{ text-decoration:none;}
 address {
  position:absolute; 
  left:40%;
+}
+#goUP {
+  position: fixed;
+  width:5%;
+  height:10%;
+  bottom: 2%;
+  right: 2%;
+  z-index: 2;
+  font-size: 300%;
+  border: none;
+  outline: none;
+  background-color: #1640D6;
+  font-weight: bold;
+  color: #FF90C2;
+  cursor: pointer;
+  padding: 0.5%;
+  border-radius: 4px;
 }

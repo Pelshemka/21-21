@@ -6,8 +6,10 @@
 	<title>CV</title>
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link id="favicon" rel="icon" type="image/x-icon" href="favicon (1).ico">
 </head>
 <body>
+
 <div class="top-container">
  <header>
       <h1 class="header-1">До всіх, кому це цікаво, сподіваюся, що у вас все добре!!!</h1>
@@ -90,7 +92,6 @@
   </tr>
 </table>
 
- 
   <section id="perst">
    <p class="pic"> &#x1F4AC;</p>
 <h2>Персональна інформація</h2>
@@ -161,15 +162,27 @@
 
 <input type="submit" value="Надіслати">
 </form>
- 
+   <button onclick="topFunction()" id="goUP" >&#x21e7;</button>
 <script>
+
+let mybutton = document.getElementById("goUP");
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 function swapStyleSheet() {
       var checkbox = document.getElementById("toggle");
       var stylesheet = document.getElementById("pagestyle");
+	  var favicon = document.getElementById("favicon");
       if (checkbox.checked) {
         stylesheet.setAttribute("href", "CVd.css");
+		favicon.setAttribute("href", "favicon.ico");
       } else {
         stylesheet.setAttribute("href", "CV.css");
+		favicon.setAttribute("href", "favicon (1).ico");
       }
     }
 
